@@ -28,6 +28,16 @@ TEST(FizzBuzzTest, return_2_with_arg_2) {
 	EXPECT_EQ("2", result);
 }
 
+TEST(FizzBuzzTest, return_Fizz_with_arg_6) {
+	std::string result = FizzBuzz(6);
+	EXPECT_EQ("Fizz", result);
+}
+
+TEST(FizzBuzzTest, return_Buzz_with_arg_10) {
+	std::string result = FizzBuzz(10);
+	EXPECT_EQ("Buzz", result);
+}
+
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();

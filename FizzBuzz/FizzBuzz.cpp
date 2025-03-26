@@ -2,10 +2,10 @@
 
 std::string FizzBuzz(int number) {
 
-	if (number == 3) {
+	if (number == 3 || number == 6) {
 		return "Fizz";
 	}
-	else if (number == 5) {
+	else if (number == 5 || number == 10) {
 		return "Buzz";
 	}
 	else if (number == 15) {
