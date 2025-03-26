@@ -59,7 +59,14 @@ TEST(FizzBuzzTest, return_Buzz_with_arg_multi53) {
 	EXPECT_EQ("FizzBuzz", FizzBuzz(75));
 }
 
-int main(int argc, char** argv) {
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
+TEST(FizzBuzzTest, return_number_with_arg_notmulti53) {
+
+	EXPECT_EQ("22", FizzBuzz(22));
+	EXPECT_EQ("56", FizzBuzz(56));
+	EXPECT_EQ("82", FizzBuzz(82));
 }
+
+//int main(int argc, char** argv) {
+//	::testing::InitGoogleTest(&argc, argv);
+//	return RUN_ALL_TESTS();
+//}

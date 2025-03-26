@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 std::string FizzBuzz(int number) {
 
@@ -12,18 +13,16 @@ std::string FizzBuzz(int number) {
 
 	if (number % 3 == 0) {
 		return "Fizz";
-	} else if (number == 2) {
-		return "2";
 	}
 
 
-	return "1";
+	return std::to_string(number);
 }
 
 
-/*
 int main() {
-	std::cout << "Hello, World" << std::endl;
+	for (int i = 1; i <= 100; i++) {
+		std::cout << FizzBuzz(i) << std::endl;
+	}
 	return 0;
 }
-*/
