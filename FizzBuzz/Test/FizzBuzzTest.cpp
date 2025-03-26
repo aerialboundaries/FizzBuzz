@@ -38,6 +38,13 @@ TEST(FizzBuzzTest, return_Buzz_with_arg_10) {
 	EXPECT_EQ("Buzz", result);
 }
 
+TEST(FizzBuzzTest, return_Fizz_with_arg_multi3) {
+	
+	EXPECT_EQ("Fizz", FizzBuzz(12));
+	EXPECT_EQ("Fizz", FizzBuzz(48));
+	EXPECT_EQ("Fizz", FizzBuzz(96));
+}
+
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
