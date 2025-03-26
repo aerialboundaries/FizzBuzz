@@ -48,8 +48,15 @@ TEST(FizzBuzzTest, return_Fizz_with_arg_multi3) {
 TEST(FizzBuzzTest, return_Buzz_with_arg_multi5) {
 
 	EXPECT_EQ("Buzz", FizzBuzz(10));
-	EXPECT_EQ("Buzz", FizzBuzz(45));
-	EXPECT_EQ("Buzz", FizzBuzz(90));
+	EXPECT_EQ("Buzz", FizzBuzz(50));
+	EXPECT_EQ("Buzz", FizzBuzz(95));
+}
+
+TEST(FizzBuzzTest, return_Buzz_with_arg_multi53) {
+
+	EXPECT_EQ("FizzBuzz", FizzBuzz(30));
+	EXPECT_EQ("FizzBuzz", FizzBuzz(60));
+	EXPECT_EQ("FizzBuzz", FizzBuzz(75));
 }
 
 int main(int argc, char** argv) {
